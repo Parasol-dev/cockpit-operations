@@ -1,0 +1,8 @@
+---
+- name: RHEL operations
+  hosts: remoteoffice
+  tasks:
+    - name: Install cockpit using redhat.rhel_system_roles collection
+      # Content suggestion provided by Ansible Lightspeed
+      ansible.builtin.include_role:
+        name: redhat.rhel_system_roles.cockpit
